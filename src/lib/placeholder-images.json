@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-books",
+      "description": "Collection of books for the hero section",
+      "imageUrl": "https://i.imgur.com/NZvn1tj.png",
+      "imageHint": "book collection"
+    },
+    {
+      "id": "finances-category",
+      "description": "Image for the finances category",
+      "imageUrl": "https://i.imgur.com/Y2KpRj2.png",
+      "imageHint": "finance money"
+    },
+    {
+      "id": "investments-category",
+      "description": "Image for the investments category",
+      "imageUrl": "https://i.imgur.com/8EsAUwi.png",
+      "imageHint": "investment chart"
+    },
+    {
+      "id": "career-category",
+      "description": "Image for the career category",
+      "imageUrl": "https://i.imgur.com/s9376GS.png",
+      "imageHint": "career growth"
+    },
+    {
+      "id": "mindset-category",
+      "description": "Image for the mindset category",
+      "imageUrl": "https://i.imgur.com/zteVH58.png",
+      "imageHint": "mindset success"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "First testimonial",
+      "imageUrl": "https://i.imgur.com/nnHbQcl.jpeg",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Second testimonial",
+      "imageUrl": "https://i.imgur.com/cWvvnvq.jpeg",
+      "imageHint": "person happy"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Third testimonial",
+      "imageUrl": "https://i.imgur.com/nTn44zB.jpeg",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "value-prop-1",
+      "description": "First value proposition image",
+      "imageUrl": "https://i.imgur.com/5lIyfXP.jpeg",
+      "imageHint": "book price"
+    },
+    {
+      "id": "value-prop-2",
+      "description": "Second value proposition image",
+      "imageUrl": "https://i.imgur.com/9VF1kEd.jpeg",
+      "imageHint": "book price"
+    },
+    {
+      "id": "value-prop-3",
+      "description": "Third value proposition image",
+      "imageUrl": "https://i.imgur.com/IMskYb6.jpeg",
+      "imageHint": "book price"
+    },
+    {
+      "id": "value-prop-4",
+      "description": "Fourth value proposition image",
+      "imageUrl": "https://i.imgur.com/0Fbce2g.jpeg",
+      "imageHint": "book price"
+    }
+  ]
 }
