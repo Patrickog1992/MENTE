@@ -32,21 +32,33 @@
     },
     {
       "id": "testimonial-1",
-      "description": "First testimonial",
-      "imageUrl": "https://i.imgur.com/nnHbQcl.jpeg",
+      "description": "Depoimento de Carlos Silva",
+      "imageUrl": "https://i.imgur.com/d2jduEE.png",
       "imageHint": "person smiling"
     },
     {
       "id": "testimonial-2",
-      "description": "Second testimonial",
-      "imageUrl": "https://i.imgur.com/cWvvnvq.jpeg",
+      "description": "Depoimento de Juliana Santos",
+      "imageUrl": "https://i.imgur.com/K5tLVza.jpg",
       "imageHint": "person happy"
     },
     {
       "id": "testimonial-3",
-      "description": "Third testimonial",
-      "imageUrl": "https://i.imgur.com/nTn44zB.jpeg",
+      "description": "Depoimento de Fernando Oliveira",
+      "imageUrl": "https://i.imgur.com/QfJtgio.jpg",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Depoimento de Amanda Costa",
+      "imageUrl": "https://i.imgur.com/cGzrRGs.jpg",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Depoimento de Ricardo Pereira",
+      "imageUrl": "https://i.imgur.com/SPsVs9s.jpg",
+      "imageHint": "man smiling"
     },
     {
       "id": "value-prop-1",

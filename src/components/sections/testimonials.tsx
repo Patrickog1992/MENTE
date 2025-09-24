@@ -7,7 +7,7 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
 
-const testimonialIds = ["testimonial-1", "testimonial-2", "testimonial-3"];
+const testimonialIds = ["testimonial-1", "testimonial-2", "testimonial-3", "testimonial-4", "testimonial-5"];
 
 const comments = [
     {
@@ -35,11 +35,7 @@ const comments = [
 export function Testimonials() {
   const testimonials = testimonialIds.map(id => PlaceHolderImages.find(p => p.id === id)).filter(Boolean);
   
-  const imagePlugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
-  );
-
-  const commentPlugin = React.useRef(
+  const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
@@ -49,60 +45,38 @@ export function Testimonials() {
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           Veja o que nossos <span className="text-primary">leitores</span> estão dizendo:
         </h2>
-        <div className="mt-12 flex justify-center">
-          <Carousel
-            opts={{ align: "start", loop: true }}
-            plugins={[imagePlugin.current]}
-            className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl"
-          >
-            <CarouselContent>
-              {testimonials.map((testimonial) => (
-                testimonial && (
-                  <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <Card className="overflow-hidden rounded-xl">
-                        <CardContent className="p-0">
-                          <Image
-                            src={testimonial.imageUrl}
-                            alt={testimonial.description}
-                            width={400}
-                            height={400}
-                            className="aspect-square object-cover"
-                            data-ai-hint={testimonial.imageHint}
-                          />
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                )
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:inline-flex" />
-            <CarouselNext className="hidden sm:inline-flex" />
-          </Carousel>
-        </div>
-
-        <h3 className="text-2xl md:text-3xl font-bold text-center mt-16 md:mt-24">
-            E também veja os <span className="text-primary">comentários</span>
-        </h3>
+        
         <div className="mt-12 flex justify-center">
             <Carousel
                 opts={{ align: "start", loop: true }}
-                plugins={[commentPlugin.current]}
+                plugins={[plugin.current]}
                 className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl"
             >
                 <CarouselContent>
-                    {comments.map((comment, index) => (
-                        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                            <div className="p-2 h-full">
-                                <Card className="bg-card/50 border-border/50 h-full">
-                                    <CardContent className="p-6 flex flex-col justify-center items-center text-center h-full">
-                                        <p className="text-foreground/80 italic">"{comment.comment}"</p>
-                                        <p className="mt-4 font-bold text-primary">- {comment.name}</p>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
+                    {testimonials.map((testimonial, index) => (
+                        testimonial && (
+                            <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
+                                <div className="p-2 h-full">
+                                    <Card className="bg-card/50 border-border/50 h-full overflow-hidden">
+                                        <CardContent className="p-0 flex flex-col h-full">
+                                          <div className="relative w-full aspect-square">
+                                              <Image
+                                                  src={testimonial.imageUrl}
+                                                  alt={testimonial.description}
+                                                  fill
+                                                  className="object-cover"
+                                                  data-ai-hint={testimonial.imageHint}
+                                              />
+                                          </div>
+                                          <div className="p-6 flex flex-col justify-center items-center text-center flex-1">
+                                              <p className="text-foreground/80 italic">"{comments[index % comments.length].comment}"</p>
+                                              <p className="mt-4 font-bold text-primary">- {comments[index % comments.length].name}</p>
+                                          </div>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                        )
                     ))}
                 </CarouselContent>
                 <CarouselPrevious className="hidden sm:inline-flex" />
