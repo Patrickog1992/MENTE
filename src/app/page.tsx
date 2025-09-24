@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <header className="py-6 flex justify-center">
         <Image 
           src="https://i.imgur.com/B1JGEA2.png"
