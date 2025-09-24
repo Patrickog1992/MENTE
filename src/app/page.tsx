@@ -1,4 +1,3 @@
-import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
 import { Categories } from "@/components/sections/categories";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -13,7 +12,6 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
       <main className="flex-1">
         <Hero />
         <section className="py-12 sm:py-20 bg-background">
