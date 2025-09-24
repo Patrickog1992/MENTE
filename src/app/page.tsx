@@ -15,7 +15,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <header className="py-6 flex justify-center">
         <Image 
-          src="https://i.imgur.com/Xn7zzBZ.png"
+          src="https://i.imgur.com/B1JGEA2.png"
           alt="Mente Milionária Logo"
           width={100}
           height={100}
