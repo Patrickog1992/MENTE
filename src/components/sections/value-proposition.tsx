@@ -1,12 +1,20 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 
 const imageIds = ["value-prop-1", "value-prop-2", "value-prop-3", "value-prop-4"];
 
 export function ValueProposition() {
   const images = imageIds.map(id => PlaceHolderImages.find(p => p.id === id)).filter(Boolean);
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
   return (
     <section className="py-12 sm:py-24">
@@ -23,6 +31,7 @@ export function ValueProposition() {
         <div className="mt-12 flex justify-center">
           <Carousel
             opts={{ align: "start", loop: true }}
+            plugins={[plugin.current]}
             className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl"
           >
             <CarouselContent>
@@ -47,8 +56,8 @@ export function ValueProposition() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden sm:inline-flex" />
-            <CarouselNext className="hidden sm:inline-flex" />
+            <CarouselPrevious className="inline-flex sm:hidden" />
+            <CarouselNext className="inline-flex sm:hidden" />
           </Carousel>
         </div>
       </div>
