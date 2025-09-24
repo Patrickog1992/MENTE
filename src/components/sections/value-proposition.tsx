@@ -23,12 +23,12 @@ export function ValueProposition() {
         <div className="mt-12 flex justify-center">
           <Carousel
             opts={{ align: "start", loop: true }}
-            className="w-full max-w-xs sm:max-w-xl md:max-w-4xl"
+            className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl"
           >
             <CarouselContent>
               {images.map((image) => (
                 image && (
-                  <CarouselItem key={image.id} className="sm:basis-1/2 lg:basis-1/2">
+                  <CarouselItem key={image.id} className="sm:basis-1/2">
                     <div className="p-2">
                       <Card className="overflow-hidden border-border shadow-lg">
                         <CardContent className="p-0">
@@ -47,8 +47,8 @@ export function ValueProposition() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden sm:inline-flex" />
+            <CarouselNext className="hidden sm:inline-flex" />
           </Carousel>
         </div>
       </div>

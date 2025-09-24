@@ -17,7 +17,7 @@ export function Testimonials() {
         <div className="mt-12 flex justify-center">
           <Carousel
             opts={{ align: "start", loop: true }}
-            className="w-full max-w-xs sm:max-w-xl md:max-w-4xl"
+            className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl"
           >
             <CarouselContent>
               {testimonials.map((testimonial) => (
@@ -41,8 +41,8 @@ export function Testimonials() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden sm:inline-flex" />
+            <CarouselNext className="hidden sm:inline-flex" />
           </Carousel>
         </div>
       </div>
