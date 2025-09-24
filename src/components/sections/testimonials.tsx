@@ -17,7 +17,7 @@ export function Testimonials() {
         <div className="mt-12 flex justify-center">
           <Carousel
             opts={{ align: "start", loop: true }}
-            className="w-full max-w-sm md:max-w-4xl"
+            className="w-full max-w-xs sm:max-w-xl md:max-w-4xl"
           >
             <CarouselContent>
               {testimonials.map((testimonial) => (
