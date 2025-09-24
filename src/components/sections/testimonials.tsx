@@ -58,16 +58,15 @@ export function Testimonials() {
                             <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-2 h-full">
                                     <Card className="bg-card/50 border-border/50 h-full overflow-hidden">
-                                        <CardContent className="p-0 flex flex-col h-full">
-                                          <div className="relative w-full aspect-square">
-                                              <Image
-                                                  src={testimonial.imageUrl}
-                                                  alt={testimonial.description}
-                                                  fill
-                                                  className="object-cover"
-                                                  data-ai-hint={testimonial.imageHint}
-                                              />
-                                          </div>
+                                        <CardContent className="p-6 flex flex-col items-center text-center h-full">
+                                          <Image
+                                              src={testimonial.imageUrl}
+                                              alt={testimonial.description}
+                                              width={100}
+                                              height={100}
+                                              className="rounded-full object-cover w-[100px] h-[100px]"
+                                              data-ai-hint={testimonial.imageHint}
+                                          />
                                           <div className="p-6 flex flex-col justify-center items-center text-center flex-1">
                                               <p className="text-foreground/80 italic">"{comments[index % comments.length].comment}"</p>
                                               <p className="mt-4 font-bold text-primary">- {comments[index % comments.length].name}</p>
