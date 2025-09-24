@@ -41,7 +41,7 @@ export function Offer() {
                             </div>
                             
                             <Button size="lg" className="mt-8 w-full max-w-md mx-auto font-bold text-xl h-16 shadow-lg shadow-primary/30 transform hover:scale-105 transition-transform duration-300">
-                                EU QUERO APROVEITAR A OFERTA!
+                                QUERO A OFERTA AGORA!
                             </Button>
                         </div>
                     </div>
