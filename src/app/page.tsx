@@ -26,7 +26,7 @@ export default function Home() {
         <section className="py-12 sm:py-20 bg-background">
             <div className="container text-center">
                 <Button size="lg" className="h-16 text-xl font-extrabold shadow-lg shadow-primary/20 transform hover:scale-105 transition-transform duration-300">
-                    QUERO IR PARA O PRÓXIMO NÍVEL
+                    QUERO O PRÓXIMO NÍVEL
                 </Button>
             </div>
         </section>
