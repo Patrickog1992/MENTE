@@ -16,7 +16,7 @@ export function Hero() {
               A chave para o seu próximo nível
             </h1>
             <p className="mt-4 max-w-xl text-lg text-foreground/80">
-              200 AUDIOS: Best-Sellers que transformam sua mentalidade e potencializam suas finanças tudo em um único Lugar, com conteúdos selecionados para acelerar seu crescimento pessoal e profissional.
+              200 AÚDIOS: Best-Sellers que transformam sua mentalidade e potencializam suas finanças tudo em um único Lugar, com conteúdos selecionados para acelerar seu crescimento pessoal e profissional.
             </p>
           </div>
           <div className="flex justify-center">
