@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, KeyRound, BookCopy, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 const benefitsData = [
     {
@@ -47,9 +48,11 @@ export function Benefits() {
             ))}
         </div>
 
-        <Button size="lg" className="mt-12 font-bold text-lg h-14 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
-          EU QUERO AGORA!
-        </Button>
+        <Link href="https://pay.kirvano.com/034e4488-9e87-4e91-aafa-450f564f8849">
+            <Button size="lg" className="mt-12 font-bold text-lg h-14 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
+              EU QUERO AGORA!
+            </Button>
+        </Link>
       </div>
     </section>
   );

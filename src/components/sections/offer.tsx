@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
+import Link from "next/link";
 
 const offerImage = PlaceHolderImages.find(p => p.id === 'hero-books');
 
@@ -39,9 +40,11 @@ export function Offer() {
                                 </p>
                             </div>
                             
-                            <Button size="lg" className="mt-8 w-full max-w-md mx-auto font-bold text-xl h-16 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
-                                QUERO A OFERTA AGORA!
-                            </Button>
+                            <Link href="https://pay.kirvano.com/034e4488-9e87-4e91-aafa-450f564f8849">
+                                <Button size="lg" className="mt-8 w-full max-w-md mx-auto font-bold text-xl h-16 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
+                                    QUERO A OFERTA AGORA!
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </Card>
