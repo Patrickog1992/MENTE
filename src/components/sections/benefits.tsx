@@ -47,7 +47,7 @@ export function Benefits() {
             ))}
         </div>
 
-        <Button size="lg" className="mt-12 font-bold text-lg h-14 shadow-lg shadow-primary/20 transform hover:scale-105 transition-transform duration-300">
+        <Button size="lg" className="mt-12 font-bold text-lg h-14 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
           EU QUERO AGORA!
         </Button>
       </div>

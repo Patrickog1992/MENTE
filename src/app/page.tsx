@@ -25,7 +25,7 @@ export default function Home() {
         <Hero />
         <section className="py-12 sm:py-20 bg-background">
             <div className="container text-center">
-                <Button size="lg" className="h-16 text-xl font-extrabold shadow-lg shadow-primary/20 transform hover:scale-105 transition-transform duration-300">
+                <Button size="lg" className="h-16 text-xl font-extrabold shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
                     QUERO O PRÓXIMO NÍVEL
                 </Button>
             </div>

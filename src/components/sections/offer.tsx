@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -40,7 +39,7 @@ export function Offer() {
                                 </p>
                             </div>
                             
-                            <Button size="lg" className="mt-8 w-full max-w-md mx-auto font-bold text-xl h-16 shadow-lg shadow-primary/30 transform hover:scale-105 transition-transform duration-300">
+                            <Button size="lg" className="mt-8 w-full max-w-md mx-auto font-bold text-xl h-16 shadow-lg bg-green-500 hover:bg-green-600 shadow-green-500/30 animate-pulse transform hover:scale-105 transition-transform duration-300">
                                 QUERO A OFERTA AGORA!
                             </Button>
                         </div>
