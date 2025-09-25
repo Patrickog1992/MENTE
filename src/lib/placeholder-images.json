@@ -83,6 +83,24 @@
       "description": "Fourth value proposition image",
       "imageUrl": "https://i.imgur.com/0Fbce2g.jpeg",
       "imageHint": "book price"
+    },
+    {
+      "id": "whatsapp-testimonial-1",
+      "description": "Whatsapp testimonial 1",
+      "imageUrl": "https://i.imgur.com/cWvvnvq.jpg",
+      "imageHint": "testimonial chat"
+    },
+    {
+      "id": "whatsapp-testimonial-2",
+      "description": "Whatsapp testimonial 2",
+      "imageUrl": "https://i.imgur.com/nnHbQcl.jpg",
+      "imageHint": "testimonial chat"
+    },
+    {
+      "id": "whatsapp-testimonial-3",
+      "description": "Whatsapp testimonial 3",
+      "imageUrl": "https://i.imgur.com/nTn44zB.jpg",
+      "imageHint": "testimonial chat"
     }
   ]
 }

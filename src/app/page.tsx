@@ -10,6 +10,7 @@ import { Footer } from "@/components/sections/footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { MoreTestimonials } from "@/components/sections/more-testimonials";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         </section>
         <Categories />
         <Testimonials />
+        <MoreTestimonials />
         <Benefits />
         <ValueProposition />
         <Offer />
